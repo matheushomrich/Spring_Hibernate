@@ -1,3 +1,21 @@
-Inversion of Control:
+- Inversion of Control:
 
-Controle passado do programador para o Software
+	Controle passado do programador para o Software
+
+- Spring Bean:
+	
+	São objetos Java cirados de classes Java 
+
+	Passar a responsabilidade da classe para o Spring Container
+
+	Classe com @component(genérico) é um compreendida como BEAN para o Spring 
+
+	@service regras de negócio
+
+	@repository persisntência e transação com o BD
+
+	@controller requisições
+
+	Controle da aplicação fica em cima da Spring Container que é um configurável
+
+	Injeção de Dependência: as dependências entre os módulos são definidas pelo Spring Container que irá injetar em cada compenente suas dependências delcaradas 
