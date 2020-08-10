@@ -1,0 +1,3 @@
+Inversion of Control:
+
+Controle passado do programador para o Software
