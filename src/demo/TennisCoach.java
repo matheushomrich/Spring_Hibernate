@@ -1,24 +1,22 @@
 package demo;
 
-public class TrackCoach implements Coach{
+public class TennisCoach implements Coach {
 
     private FortuneService fortuneService;
 
-    public TrackCoach(){};
-    public TrackCoach(FortuneService theFortuneService) {
+    public TennisCoach (FortuneService theFortuneService) {
         fortuneService = theFortuneService;
     }
 
     @Override
     public String getDailyWorkout(){
-        return "30 minute jog";
+        return "20 forehands and 20 backhands";
     }
     public String getCoachName(){
-        return "Robert";
+        return "Mike";
     }
-
-    @Override
     public String getDailyFortune() {
         return fortuneService.getFortune();
     }
+
 }
