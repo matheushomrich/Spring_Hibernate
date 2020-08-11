@@ -6,5 +6,6 @@ public interface Coach {
 
     public String getCoachName();
 
-    public String getDailyFortune();
+    public String getDailyFortune(int rand);
+
 }

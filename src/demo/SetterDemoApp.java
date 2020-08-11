@@ -4,27 +4,27 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Random;
 
-public class HelloSpringApp {
+public class SetterDemoApp {
+
     public static void main(String[] args) {
         Random random = new Random();
         int rand = random.nextInt(2);
-        // load the spring configuration file
+        // carrega o context da aplicacao
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        // retrieve from spring container
-        Coach theCoach = context.getBean("myCoach", Coach.class);
-        //FortuneService fortuneService = context.getBean("myFortuneService", FortuneService.class);
+        // carrega Bean
+        CricketCoach theCoach = context.getBean("myCricketCoach", CricketCoach.class);
 
-        // call methods on the bean
+        // chamando metodos
+
         System.out.println(theCoach.getCoachName());
         System.out.println(theCoach.getDailyWorkout());
-        //System.out.println(theCoach.getClass());
         System.out.println(theCoach.getDailyFortune(rand));
-        // System.out.println(fortuneService.getFortune());
-        // System.out.println(fortuneService.getClass());
+        System.out.println(theCoach.getEmailAddress());
+        System.out.println(theCoach.getTeamName());
 
-
-        // close the context
+        // fecha o conxtexto
         context.close();
+
     }
 }

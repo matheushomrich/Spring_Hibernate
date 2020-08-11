@@ -15,8 +15,8 @@ public class TennisCoach implements Coach {
     public String getCoachName(){
         return "Mike";
     }
-    public String getDailyFortune() {
-        return fortuneService.getFortune();
+    public String getDailyFortune(int rand) {
+        return fortuneService.getFortune(rand);
     }
 
 }
