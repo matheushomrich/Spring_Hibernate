@@ -19,3 +19,12 @@
 	Controle da aplicação fica em cima da Spring Container que é um configurável
 
 	Injeção de Dependência: as dependências entre os módulos são definidas pelo Spring Container que irá injetar em cada compenente suas dependências delcaradas 
+
+	Scope-Singleton é o padrão, um Bean compartilhado para todas as rquisições
+	Scope-Prototype vai criar uma instância nova de Bean para todas as requisições
+
+- Java Annotations:
+
+	Meta-data about the Java class
+
+	ex.: @Override confere se de fato o método é igaul ao da classe pai ou da interface durante a compilação
