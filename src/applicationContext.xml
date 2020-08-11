@@ -23,7 +23,7 @@
     <bean id="myCricketCoach" class="demo.CricketCoach">
         <!--setter -->
 
-        <property name="fortuneService" ref="myFortuneService" />
+        <property name="fortuneService" ref="myFortuneService" /> 
         <!--
         <property name="emailAddress" value="matidasilva34@gmail.com" />
         <property name="teamName" value="Baltimore Lions" />
