@@ -11,6 +11,7 @@
     
     <context:component-scan base-package="com.babufrikks.springAnnotations"/>
 
+    <context:property-placeholder location="classpath:read.properties"/>
     <!--
         <bean id="mySoccerCoach" class="com.babufrikks.springAnnotations.SoccerCoach">
 

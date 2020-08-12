@@ -28,3 +28,10 @@
 	Meta-data about the Java class
 
 	ex.: @Override confere se de fato o método é igaul ao da classe pai ou da interface durante a compilação
+	
+	@Autowired é a maneira onde você passa automaticamente via classe(e não arquivo de confirguração) a depência do objeto para o Spring 
+	
+	@Qualifier é para quando precisa especificar o ID do Bean pois pode existir mais de um tipo da Interface FortuneService por exemplo, um happyFortuneSerice e um sadFortuneService
+
+	É possível injetar valor a variaveis via java annotations, voce cria o arquivo de propriedades, carrega no arquivo xml e depois utiliza da @Value(${}) para resgatar o valor
+
