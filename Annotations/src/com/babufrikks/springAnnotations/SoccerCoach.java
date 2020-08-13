@@ -2,10 +2,13 @@ package com.babufrikks.springAnnotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 //@Component("thatCoach")
 @Component
+//@Scope("singleton") //default
+@Scope("prototype") //vai criar um objeto Bean para cada instanciacao da classe
 public class SoccerCoach implements Coach{
 
     @Autowired

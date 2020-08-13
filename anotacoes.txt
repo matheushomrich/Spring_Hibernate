@@ -20,8 +20,8 @@
 
 	Injeção de Dependência: as dependências entre os módulos são definidas pelo Spring Container que irá injetar em cada compenente suas dependências delcaradas 
 
-	Scope-Singleton é o padrão, um Bean compartilhado para todas as rquisições
-	Scope-Prototype vai criar uma instância nova de Bean para todas as requisições
+	Scope-Singleton é o padrão, um Bean compartilhado para todas as rquisições -> apenas uma instância de Bean e é memória cache
+	Scope-Prototype vai criar uma instância nova de Bean para todas as requisições, terão end. de memórias diferentes
 
 - Java Annotations:
 
@@ -35,3 +35,4 @@
 
 	É possível injetar valor a variaveis via java annotations, voce cria o arquivo de propriedades, carrega no arquivo xml e depois utiliza da @Value(${}) para resgatar o valor
 
+	- You can define the scope with the @Scope annotation
