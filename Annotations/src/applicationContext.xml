@@ -13,6 +13,10 @@
 
     <context:property-placeholder location="classpath:read.properties"/>
     <!--
+     <context:property-placeholder location="classpath:fortunes.txt"/>
+    -->
+
+    <!--
         <bean id="mySoccerCoach" class="com.babufrikks.springAnnotations.SoccerCoach">
 
             <property name="coachName" value="Matt" />

@@ -4,16 +4,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 //@Component("thatCoach")
 @Component
 //@Scope("singleton") //default
-@Scope("prototype") //vai criar um objeto Bean para cada instanciacao da classe
+//@Scope("prototype") //vai criar um objeto Bean para cada instanciacao da classe
 public class SoccerCoach implements Coach{
 
     @Autowired
     //@Qualifier("foo")
-    @Qualifier("roi")
+    @Qualifier("eja")
     private FortuneService fortuneService;
 
     /*@Autowired
@@ -25,6 +27,18 @@ public class SoccerCoach implements Coach{
         System.out.println("Inside default constructor");
     }
 
+    //init method
+
+    @PostConstruct
+    public void start() {
+        System.out.println("Inside method - init");
+    }
+
+    //destroy method
+    @PreDestroy
+    public void end() {
+        System.out.println("Inside method - destroy");
+    }
     /*@Autowired
     public void setFortuneService(FortuneService theFortuneService) {
         System.out.println("Inside setFortuneService method");

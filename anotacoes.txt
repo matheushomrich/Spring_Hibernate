@@ -36,3 +36,5 @@
 	É possível injetar valor a variaveis via java annotations, voce cria o arquivo de propriedades, carrega no arquivo xml e depois utiliza da @Value(${}) para resgatar o valor
 
 	- You can define the scope with the @Scope annotation
+
+	- @PostContruct & @PreDestroy are annotations to alert the bean to when to read the moethods, so you dont have to write it in the config file ALERT: IT HAS TO BE A NO-ARG METHOD
