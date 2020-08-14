@@ -1,5 +1,7 @@
 package com.babufrikks.springAnnotations;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class SwimCoach implements Coach{
 
     private FortuneService fortuneService;
@@ -7,6 +9,13 @@ public class SwimCoach implements Coach{
     public SwimCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
+
+    @Value("${foo.email}")
+    private String email;
+
+    @Value("${foo.name}")
+    private String team;
+
 
     @Override
     public String getDailyWorkout() {
@@ -21,5 +30,14 @@ public class SwimCoach implements Coach{
     @Override
     public String getDailyFortune() {
         return fortuneService.getFortune();
+
     }
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
 }
