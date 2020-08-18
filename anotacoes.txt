@@ -47,5 +47,7 @@
 - MVC:
 	
 	@RequestParam permite bindir o parametro requisitado com uma variavel dentro dos proprios parametros do método em questao
+
+	@ReqeustMapping questao de organizacao e agrupamento de pags da mesmo controller
 	
 
