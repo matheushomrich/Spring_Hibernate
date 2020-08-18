@@ -43,5 +43,9 @@
 
 	Configurando o container do Sring pode ser feito de 3 manieras, tudo pelo xml, usando o component-scan com as java annotations, com java source code assim nao necessitando de xml como vai ser comentado abaixo
 
+
+- MVC:
+	
+	@RequestParam permite bindir o parametro requisitado com uma variavel dentro dos proprios parametros do método em questao
 	
 
